@@ -1,4 +1,3 @@
-</style>
 <!DOCTYPE html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -6,21 +5,18 @@
   <link rel="stylesheet" href="faq1.css">
   <title>Print Portal Guide and FAQs</title>
 </head>
-
 <script>
     let myLabels = document.querySelectorAll('.lbl-toggle'); Array.from(myLabels).forEach(label => { label.addEventListener('keydown', e => { if (e.which === 32 || e.which === 13) { e.preventDefault(); label.click(); }; }); }); 
 </script>
-
-<html>
-<body style="background: #e3e3e3; color: #000;">
+<html><body style="background: #e3e3e3; color: #000;">
 <div>
-  <h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center;">Frequently Asked Questions About the Print Portal</h2>
-    <p style="margin-top: -18px; font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: center; color:#8a2be2; font-weight: bold;">Click A Question / Get an Answer</p>
+  <h2 class="title">Frequently Asked Questions by Gideon Members</h2>
+  <p class="sub-title">Click A Question / Get an Answer</p>
 </div>
 <!--   >>>>>>>>>>>>>>>>>>>>>>>>> CATEGORY BREAK <<<<<<<<<<<<<<<<<<<<<<
                                Password Resetting                         -->
-<div>
-  <h2 style="background: #000; color: #fff;margin: 0px; border-top: 2px solid #000; padding-top: 8px; padding-left: 10px; padding-bottom: 8px; font-family: Verdana, Geneva, Tahoma, sans-serif; border-radius: 7px;">Password Resetting:</h2>
+<div class="div-category">
+  <h2>Password Resetting:</h2>
 </div>
 <div class="wrap-collabsible">
   <input id="PWReset1" class="toggle" type="checkbox"> 
@@ -37,9 +33,9 @@
           <br><img src="images/SecretQuestionPW.png" style="position: relative; border: 1px solid #000; top: 5px; margin-bottom: 10px;" alt="Log In Window"></li>
           <li>The security question that you created when you registered is displayed. Enter the answer to the security question and click <b>Next</b>.<br>
           <span style="color:darkred; font-weight: bold;">NOTE: The answer to the security question is case-sensitive.</span></li>
-          <ul><li>If your answer is correct the system will email you a link to reset your password.<br><i><span style="color: darkred;">The link in your email will work correctly if your browser security is set for our portal.<br>Instructions on how to update your settings are answered in the question below this one.</span></i></li>
-          <li>If it is not correct <a href="mailto: pbeyer@allenprinting.com">email us</a> and we will manually reset it for you.</li>
-          </ul>
+            <ul><li>If your answer is correct the system will email you a link to reset your password.<br><i><span style="color: darkred;">The link in your email will work correctly if your browser security is set for our portal.<br>Instructions on how to update your settings are answered in the question below this one.</span></i></li>
+              <li>If it is not correct <a href="mailto: pbeyer@allenprinting.com">email us</a> and we will manually reset it for you.</li>
+            </ul>
         </ol>
       </p>
       </div>
@@ -51,13 +47,13 @@
         <p>ALL of the top web browsers (Google Chrome, Firefox, Apple's Safari, Microsoft Edge) inspect the security of websites you visit and block elements from sites that are deemed either insecure or have mixed security.</p>
         <p>Our print portal is considered "Mixed Security". This means pages you access have links in the code to the back-end of our site. Thise links are files, scripts, and calls which enable elements of our portal to function.<br>Even though these files, scripts, and calls cannot be accessed by a user, web browser algorithms don't recognize this and security is enforced by default.</p>
         <p>To remedy this you have to adjust the "Site Settings" in your browser to gain full functionality of our print portal, including pop-up windows, file uploads, and some design features.<br>Follow the steps for your browser below to gain full functionality:</p>
-      </div>
+
       <input id="PWgoogle" class="toggle" type="checkbox"> 
-      <label for="PWgoogle" class="lbl-toggle" tabindex="0">Chrome</label>
+      <label for="PWgoogle" class="lbl-toggle" tabindex="0">Google Chrome</label>
         <div class="collapsible-content">
           <div class="content-inner">
             <ol><li>On your computer, open Chrome.</li>
-              <li data-outlined="false" class="">Go to a website.</li>
+              <li>Go to a website.</li>
               <li>To the left of the web address, an icon showing the security status of the site is displayed. It's one of these 3:
               <img src="images/icon-lock.png" width="18" height="18" alt="Lock" title="Lock" style="position: relative; top: 3px;" data-mime-type="image/png">
               <img src="images/icon-info.png" width="20" height="20" style="position: relative; top: 4px;" alt="View site information" title="View site information">
@@ -88,12 +84,48 @@
             <p><img src="images/Firefox-Permissions.png" width="30%"></p><br>
           </div>
         </div>
+      <input id="PWSafari" class="toggle" type="checkbox"> 
+      <label for="PWSafari" class="lbl-toggle" tabindex="0">Apple Safari</label>
+        <div class="collapsible-content">
+          <div class="content-inner">
+            <h3>Customize the active website</h3>
+              <ol>
+                <li>In the Safari app, choose Safari > Settings for This Website.<br><img class="graphix" style="position: relative; top: 5px; margin-bottom: 5px;" src="images/Safari1.png"></li>
+                <li>It is here you can choose the options you want for a specific website:
+                  <ul><li><b>UNCHECK:</b>Enable Content Blockers</li>
+                    <li><b>ALLOW:</b>Pop-up Windows</li>
+                  </ul>
+                    <img class="graphix" style="position: relative; top: 5px; margin-bottom: 5px;" src="images/Safari2.png"></li>
+              </ol> 
+          </div>
+        </div>
+      <input id="PWEdge" class="toggle" type="checkbox"> 
+      <label for="PWEdge" class="lbl-toggle" tabindex="0">Microsoft Edge</label>
+        <div class="collapsible-content">
+          <div class="content-inner">
+            <h3>How to set permissions per website on Microsoft Edge</h3>
+            <ol>
+              <li>Click the <strong>Lock</strong> icon next to the website link in the address bar.<br><img class="graphix" style="position: relative; top: 5px; margin-bottom: 5px;" src="images/Edge1.png"></li>
+              <li>Click the <strong>Site permissions</strong> option.</li>
+              <li>Use the drop-down menus to allow or deny permissions
+                <ul>
+                  <li><b>ALLOW: </b>Javascript</li>
+                  <li><b>ALLOW: </b>Images</li>
+                  <li><b>ALLOW: </b>Pop-ups and redirects</li>
+                  <li><b>ALLOW: </b>Automatic downloads</li>
+                  <li><b>ALLOW: </b>Insecure Content</li>
+                </ul>
+                <img class="graphix" style="position: relative; top: 5px; margin-bottom: 5px;" src="images/Edge2.png" width="402px" height="345"></li>
+            </ol>
+          </div>
+        </div>
+      </div>    
   </div>
 </div>
 <!--   >>>>>>>>>>>>>>>>>>>>>>>>> CATEGORY BREAK <<<<<<<<<<<<<<<<<<<<<<
                                 General Questions                        -->
-<div>
-  <h2 style="background: #000; color: #fff;margin: 0px; border-top: 2px solid #000; padding-top: 8px; padding-left: 10px; padding-bottom: 8px; font-family: Verdana, Geneva, Tahoma, sans-serif;   border-radius: 7px;">General Topics:</h2>
+<div class="div-category">
+  <h2>General Topics:</h2>
 </div>
 <!-- MY ACCOUNT -->
 <input id="MyAccount" class="toggle" type="checkbox"> 
@@ -111,9 +143,9 @@
                 <i>It says, “Please click here to choose/change your facility.”</i>Do that and a new window will appear.<br> It is labeled "Print Shop in the upper left corner."</li>
               <li>Left click the circle to the left of “<span style="font-weight: bold; color: red;">APC Online</span>”</li> 
               <li>Click the Submit button and you are done. <i>(You are now registered and automatically logged in)</i>.</li> 
-          </ol>
+            </ol>
+          </div>
         </div>
-      </div>
       <input id="MAQuestion2" class="toggle" type="checkbox"> 
       <label for="MAQuestion2" class="lbl-toggle" tabindex="0">How do I log into my account?</label>
         <div class="collapsible-content">
@@ -123,16 +155,16 @@
               <li>Type in your Username and Password<br>
                 <span style="color:darkred;"><i><b>NOTE:</b> Usernames and passwords are case sensitive</span></i>.</li> 
               <li>Click the <b>Login</b> button in the lower left of the window.</li>
-          </ol>
+            </ol>
           </div>
         </div>
-        <input id="MAQuestion3" class="toggle" type="checkbox"> 
-        <label for="MAQuestion3" class="lbl-toggle" tabindex="0">Am I required to log in?</label>
+      <input id="MAQuestion3" class="toggle" type="checkbox"> 
+      <label for="MAQuestion3" class="lbl-toggle" tabindex="0">Am I required to log in?</label>
         <div class="collapsible-content">
           <div class="content-inner">
             <p>This truly depends on if you can see items or product categories.    
-            <ul><li>If you <b>CAN</b> you aren't required to log in to place orders and you can check out as a guest.</li>
-            <li>If you <b>CAN NOT</b> then you must log in to view your organization's assets and place orders in the print portal.</li></ul></p>
+              <ul><li>If you <b>CAN</b> you aren't required to log in to place orders and you can check out as a guest.</li>
+              <li>If you <b>CAN NOT</b> then you must log in to view your organization's assets and place orders in the print portal.</li></ul></p>
             <p>Regardless, we encourage ALL users to create an account and log in for a few reasons:<br>
               <ul><li>You can save your work / designs. Starting over for an item you may order a few times in a year can be both frustrating and time consuming.</li>
                   <li>You will have an order history for your records.</li>
@@ -143,27 +175,27 @@
             </p>
           </div>
         </div>
-        <input id="MAQuestion5" class="toggle" type="checkbox"> 
-        <label for="MAQuestion5" class="lbl-toggle" tabindex="0">Is your website secure?</label>
-          <div class="collapsible-content">
-            <div class="content-inner">
-              <p>We protect our customers and their information using the most advanced standards for security. We use Secure Socket Layer (SSL) technology, for establishing an encrypted link between the server hosting this print portal, our file servers, and applications which are supported by modern Internet browsers.</p>
-              <p>SSL technology represents the highest level of security available on the Internet. It automatically encrypts information traveling over the Internet, verifies the identity of the transacting servers through certificates and digital signatures, and confirms that the integrity of message content is maintained throughout transmission.</p>
-              <p>ALL of the top web browsers (Google Chrome, Firefox, Apple's Safari, Microsoft Edge) inspect the security of websites you visit and block elements from sites that are deemed either insecure or have mixed security.</p>
-              <p>Our print portal is considered a "Mixed Security" site by the main internet browsers. This means some pages you access on our site may contain links in the code to the back-end of our site that browsers don't consider "secure".<br> These links to files, scripts, and calls enable elements of our portal to function; even though they cannot be directly accessed by a user. Because of this, web browser algorithms block certain site settings by default.</p>
-              <p>To remedy this you have to adjust the "Site Settings" in your browser to gain full functionality of our print portal, including pop-up windows, file uploads, and some design features.<br>Follow the steps for your browser below to gain full functionality:</p>
-            </div>
+      <input id="MAQuestion5" class="toggle" type="checkbox"> 
+      <label for="MAQuestion5" class="lbl-toggle" tabindex="0">Is your website secure?</label>
+        <div class="collapsible-content">
+          <div class="content-inner">
+            <p>We protect our customers and their information using the most advanced standards for security. We use Secure Socket Layer (SSL) technology, for establishing an encrypted link between the server hosting this print portal, our file servers, and applications which are supported by modern Internet browsers.</p>
+            <p>SSL technology represents the highest level of security available on the Internet. It automatically encrypts information traveling over the Internet, verifies the identity of the transacting servers through certificates and digital signatures, and confirms that the integrity of message content is maintained throughout transmission.</p>
+            <p>ALL of the top web browsers (Google Chrome, Firefox, Apple's Safari, Microsoft Edge) inspect the security of websites you visit and block elements from sites that are deemed either insecure or have mixed security.</p>
+            <p>Our print portal is considered a "Mixed Security" site by the main internet browsers. This means some pages you access on our site may contain links in the code to the back-end of our site that browsers don't consider "secure".<br> These links to files, scripts, and calls enable elements of our portal to function; even though they cannot be directly accessed by a user. Because of this, web browser algorithms block certain site settings by default.</p>
+            <p>To remedy this you have to adjust the "Site Settings" in your browser to gain full functionality of our print portal, including pop-up windows, file uploads, and some design features.<br>Follow the steps for your browser below to gain full functionality:</p>
           </div>
-        <input id="MAQuestion6" class="toggle" type="checkbox"> 
-        <label for="MAQuestion6" class="lbl-toggle" tabindex="0">What is your privacy policy?</label>
-          <div class="collapsible-content">
-            <div class="content-inner">
-              <p>Information submitted on our website to process orders, request quotes, or make inquiries is solely viewed by Allen Printing employees.<br>This information is used to contact the customer when necessary. No information collected is shared with or sold to any other company or website.</p>
+        </div>
+      <input id="MAQuestion6" class="toggle" type="checkbox"> 
+      <label for="MAQuestion6" class="lbl-toggle" tabindex="0">What is your privacy policy?</label>
+        <div class="collapsible-content">
+          <div class="content-inner">
+            <p>Information submitted on our website to process orders, request quotes, or make inquiries is solely viewed by Allen Printing employees.<br>This information is used to contact the customer when necessary. No information collected is shared with or sold to any other company or website.</p>
               <ul><li>We do not store your passwords. We can only reset/change your password in the event you forgot it and need it reset.</li>
                   <li>We do not store credit / debit card information.</li>
               </ul>
-            </div>
           </div>
+        </div>
     </div>
   </div>
 <!-- ORDERING -->
@@ -171,6 +203,40 @@
 <label for="Ordering" class="lbl-toggle" tabindex="0">ORDERING</label>
 <div class="collapsible-content">
   <div class="content-inner">
+    <input id="Ordering6" class="toggle" type="checkbox"> 
+    <label for="Ordering6" class="lbl-toggle" tabindex="0">How do I know you received my order?</label>
+    <div class="collapsible-content">
+      <div class="content-inner">
+        <p>We received your order if you:
+          <ul><li>see an order confirmation on your screen.</li>
+            <li>received and email confirmation <i>(check your spam/junk folders)</i></li>
+          </ul></p>
+          <p>If you received an order number on-screen, along with a message indicating that your order has been received, but not immediately processed, please be assured that we have received your order and are working to process it as soon as possible.</p>
+          <p>Please do not place a <u>duplicate</u> order by pressing submit more than once or by placing a new order. Your order will be processed within 1 business day of placing it online.</p>
+          <p>Once you've completed ordering online, you will receive a confirmation email with your order number, customer number and order total.</p>
+          <p><b>Order Confirmation Example:</b><br><br>
+            <img class="graphix" src="images/OrderConfirm.png" width="529px" height="580">
+          </p>
+            <input id="Ordering7" class="toggle" type="checkbox"> 
+            <label for="Ordering7" class="lbl-toggle" tabindex="0">I didn't receive a confirmation email. What's going on?</label>
+           <div class="collapsible-content">
+            <div class="content-inner">
+              <p>A few reasons this may have happened:
+                <ul>
+                  <li>You may have typed your email address incorrectly. This would make it impossible for us to send you an email.</li>
+                  <li>You have a spam blocker that is prohibiting confirmation emails from being received.</li>
+                  <li>Your order has not completed processing. Please allow 24 hours to process your order.</li>
+                  <li>You did not return to your cart after submitting your credit card info.
+                    <ul><li><b>NOTE:</b>There are instructions at the top of the credit card form which states: <br><i><span style="color: darkred;"><b> “After pressing PAY NOW at the bottom, YOU MUST PRESS THE “Return to APC Online” BUTTON TO FINISH PROCESSING YOUR ORDER.<br>If you do not, the order WILL NOT come through to us.</b></i></span><br>
+                      This means funds will be captured for payment, but the order does not come through to us. <br><u>If you do not receive an order confirmation, we did not receive your order.</u></li>
+                  </li>
+                  </ul>
+                </ul>
+                We are not able to re-send a confirmation email, but you can contact us to inquire about your order if you are in doubt.</p>
+              </div>
+            </div>
+      </div>
+    </div> 
     <input id="Ordering1" class="toggle" type="checkbox"> 
     <label for="Ordering1" class="lbl-toggle" tabindex="0">How do I check out?</label>
     <div class="collapsible-content">
@@ -184,8 +250,8 @@
           <li>Click PROCEED TO PAYMENT</li>  
           <li>Select Credit Card and Click PLACE MY ORDER</li>
           <li>You are now at the credit card processing company. Fill out the information and press Pay Now</li> 
-            <ul><li><b>NOTE:</b>There are instructions at the top of the credit card form which states: <br><br><i><span style="color: #00055c;"> “After pressing PAY NOW at the bottom, YOU MUST PRESS THE “Return to APC Online” BUTTON TO FINISH PROCESSING YOUR ORDER. If you do not, the order WILL NOT come through to us.</i></span><br><br>
-            This means funds will be captured for payment, but the order does not come through to us. If you do not receive an order confirmation, we did not receive your order.</li> 
+            <ul><li><b>NOTE:</b>There are instructions at the top of the credit card form which states: <br><i><span style="color: darkred;"><b> “After pressing PAY NOW at the bottom, YOU MUST PRESS THE “Return to APC Online” BUTTON TO FINISH PROCESSING YOUR ORDER.<br>If you do not, the order WILL NOT come through to us.</b></i></span><br>
+            This means funds will be captured for payment, but the order does not come through to us. <br><u>If you do not receive an order confirmation, we did not receive your order.</u><br></li><br>
             </ul>
           <li>When you return to our site Click PLACE MY ORDER and you will be taken to a new window which will be your order confirmation window.</li> 
       </ol>
@@ -212,10 +278,14 @@
     <label for="Ordering4" class="lbl-toggle" tabindex="0">How long will it take to receive my order?</label>
     <div class="collapsible-content">
       <div class="content-inner">
-        <p>The formula to answer this question is: Production Time + Shipping Transit Time = Total Time</p>
+        <p>The formula to answer this question is: Total Time = Production Time + Shipping Transit Time</p>
         <p>Most jobs are shipped out of our facility within 3-10 business days after your order is placed. This is determined by the size of your order and our production schedule.<br>
-        Shipping transit time is between 1 to 5 business days and depends on your location and shipping method chosen at checkout.</p>
-        <p><i><strong>Example:</strong> You live in Los Angeles, CA and ordered business cards from us. For this example, we're pretty busy with work and we finish your cards in 5 days. Shipping UPS Ground from Nashville to Los Angeles is 4 days. Therefore, it's within reason for you recieve your cards 9 days after ordering.</i></p>
+        Shipping transit time is between 1 to 5 business days and depends on where you're shipping to and the shipping method you selected at checkout.</p>
+        <p style="color: #00055c;"><i><strong>Example:</strong><br>
+        You live in Los Angeles, CA and ordered business cards to be shipped UPS Ground to your home. 
+        <br>For this example, let's say our production schedule is full and we finish/ship your business card 5 days after placing your order.
+        <br>Shipping UPS Ground from Nashville to Los Angeles is 4 days. <br>It'd be reasonable to expect that you would receive your order 9 business days after ordering.</i>
+        </p>
       </div>
     </div>
     <input id="Ordering5" class="toggle" type="checkbox"> 
@@ -287,9 +357,9 @@
   </div>
 </div>
 <!--   >>>>>>>>>>>>>>>>>>>>>>>>> CATEGORY BREAK <<<<<<<<<<<<<<<<<<<<<<
-                             GIDEON BUSINESS CARDS                         -->
-<div>
-  <h2 style="background: #000; color: #fff;margin: 0px; border-top: 2px solid #000; padding-top: 8px; padding-left: 10px; padding-bottom: 8px; font-family: Verdana, Geneva, Tahoma, sans-serif;   border-radius: 7px;">Design How To's</h2>
+                              SMART CANVAS DESIGNS                       -->
+<div class="div-category">
+  <h2>Design How To's:</h2>
 </div>
 <input id="GideonsBC1" class="toggle" type="checkbox"> 
 <label for="GideonsBC1" class="lbl-toggle" tabindex="0">Gideon's International Business Card</label>
@@ -304,38 +374,36 @@
         <li>Now let's personalize your card. All required fields will have a  <span style="color: red;">*</span>. Data fields are not case restrictive and will display exactly what you've typed exactly as you've typed it.<br>To change the data double-click the data in the field, delete any existing data, and begin typing your information.<br>For this design I typed the Full Name using all capital letters; but not for the title.
       <p><b>Full Name: </b><i>JOHN SMITH</i><br>
       <b>Title or Camp: </b><i>Print Portal Administrator</i></p>
-      <img class="graphix" src="images/Build3.png" width="766px" height="125px"><br><br></li>
-   <ul>
-     <li>Fill out the remaining data information to your liking. <b><i>Note: </b>Some fields already have data assigned to them. This is provide a visual reference for layout purposes</i><br>
-     If you don't want data there, simply delete the data in the respective data field.<br>
-     Once you're done your card will look something like this....<br><br>
-     <img class="graphix" src="images/Build5.png" width="733px" height="318px"><br><br></li>
-   </ul>
- <li><span style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; color: blue;">Making Adjustments:</span><br>
-     Note my email address is floating way above my phone number. I would like to move it down to be closer to my phone number.<br>
-     Also, if I do this the address will look a little off center so I need to move that, too. Here is how to do that:<br><br>
-     <ul><li>Left Click the email address <u>on the card image</u> and a box will appear.<br><br>
-         <img class="graphix" src="images/Build6.png" width="735px" height="317px"><br><br></li>
-         <li>There are two ways to move this data-field:<br>1. Left click the field and hold the button down on your mouse and drag the address to a more desirable position.<br>
-         2. Left click the field and use the arrow keys on your keyboard to move the data-frame around.<br><br>
-         <img class="graphix" src="images/Build7.png" width="735px" height="317px"><br><br></li>
-         <li>Repeat the process with the address (if you desire)<br><br>
-         <img class="graphix" src="images/Build8.png" width="735px" height="317px"><br><br></li>
-         <li>When finished, my card now looks like this:<br><br>
-         <img class="graphix" src="images/Build9.png" width="735px" height="317px"><br>
-         <i>While you are not required to make your card look like this, it is the standard layout used by The Gideons International.<br>
-         This is an example of how you can adjust the layout of your card to make it more aesthetically pleasing to you.</i><br><br></li></li>
-     </ul>
-   <li>When you're finished, you have 2 options to proceed with:<br>
-   1. Click "Add to Cart".  This option puts your artwork straight into your cart.<br>
-   2. Click "SAVE". If you are a registered user, you will have access to your files for future use.<br>
-       <ul><li>If you have not registered to the website you can only edit the card when it is in your cart.<br>
-       Once you've placed your order and checked-out your data <u>is not</u> saved on the site.</li>
+      <img class="graphix" src="images/Build3.png" width="766px" height="125px"><br><br>
+            Fill out the remaining data information to your liking.<br><b><i>Note: </b>Some fields already have data assigned to them. This is provide a visual reference for layout purposes</i><br>
+            If you don't want data there, simply delete the data in the respective data field.<br>
+            Once you're done your card will look something like this....<br><br></li>
+          <img class="graphix" src="images/Build5.png" width="733px" height="318px"><br><br>
+        <li><span style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: bold; color: blue;">Making Adjustments:</span><br>
+          Note my email address is floating way above my phone number. I would like to move it down to be closer to my phone number.<br>
+          Also, if I do this the address will look a little off center so I need to move that, too. Here is how to do that:<br><br>
+            <ul><li>Left Click the email address <u>on the card image</u> and a box will appear.<br><br>
+              <img class="graphix" src="images/Build6.png" width="735px" height="317px"><br><br></li>
+              <li>There are two ways to move this data-field:<br>1. Left click the field and hold the button down on your mouse and drag the address to a more desirable position.<br>
+                2. Left click the field and use the arrow keys on your keyboard to move the data-frame around.<br><br>
+              <img class="graphix" src="images/Build7.png" width="735px" height="317px"><br><br></li>
+              <li>Repeat the process with the address (if you desire)<br><br>
+              <img class="graphix" src="images/Build8.png" width="735px" height="317px"><br><br></li>
+              <li>When finished, my card now looks like this:<br><br>
+              <img class="graphix" src="images/Build9.png" width="735px" height="317px"><br>
+              <i><span style="color: darkred;">You are not required to make your card look like this. This example follows the standard layout used by The Gideons International.<br>
+              This guide only demonstrates how you can adjust the layout to make it more aesthetically pleasing to you.</i></span><br><br></li></li>
+            </ul>
+        <li>When you're finished, you have 2 options to proceed with:<br>
+            1. Click "Add to Cart".  This option puts your artwork straight into your cart.<br>
+            2. Click "SAVE". If you are a registered user, you will have access to your files for future use.<br>
+          <ul><li>If you have not registered to the website you can only edit the card when it is in your cart.<br>
+            Once you've placed your order and checked-out your data <u>is not</u> saved on the site.</li>
            <li>If you ARE a registered user you can SAVE your file to your account and reorder your card at anytime.<br></li>
-       </ul>
-   </li>
-</ol>
-</div>
-</div>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </div>
 </body>
 </html>
