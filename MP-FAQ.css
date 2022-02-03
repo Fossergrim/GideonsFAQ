@@ -1,0 +1,111 @@
+/*  - - -  2/2/2022 New Avenue Direct CSS Collapsible  - - -  */
+.wrap-collabsible {
+  margin-bottom: 1.2rem 0;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.lbl-toggle {
+  display: block;
+  font-weight: bold;
+  font-family: Montserrat ,sans-serif;
+  font-size: 14px;
+  text-align: left;
+  padding: 8px;
+  color: #fff;
+  background: #383536;
+  border-bottom: 0.5px solid #000;
+  cursor: pointer;
+  border-radius: 7px;
+  transition: all 0.25s ease-out;
+}
+
+.lbl-toggle:hover {
+  background: khaki;
+  color: #000;
+}
+
+.lbl-toggle::before {
+  content: ' ';
+  display: inline-block;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+  transition: transform .2s ease-out;
+}
+
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+  color: red;
+}
+
+.collapsible-content {
+  max-height: 0px;
+  font-family: Montserrat ,sans-serif;
+  font-size: 13px;
+  overflow: hidden;
+  transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 1500vh
+}
+
+.toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  background: #000;
+  color: #ff0;
+}
+
+.collapsible-content .content-inner {
+  background: #f5ebb2;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: .25rem 1rem;
+}
+
+.graphix {
+  border: 1px solid #000;
+}
+
+.div-category {
+  background: #f68b1f;
+  color: #000;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  font-family: Montserrat ,sans-serif;
+  box-shadow: 0 -3px 13px #000;
+  border-radius: 7px;
+  }
+
+h2 {
+  margin: 0px;
+  padding-left: 10px;
+  border-radius: 7px;
+}
+
+.title {
+  padding-top: 5px; 
+  text-align: center; 
+  font-family: Montserrat ,sans-serif;
+}
+
+.sub-title {
+  margin-top: -18px;
+  font-family: Montserrat ,sans-serif;
+  text-align: center; 
+  color:#8a2be2; 
+  padding-top: 20px;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
